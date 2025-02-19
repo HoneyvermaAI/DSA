@@ -3,15 +3,15 @@ public class SkipWordString {
         System.out.println(SkipWord("honeyapplemangonuts"));
 
     }
-    static String SkipWord(String upprocess){
-        if(upprocess.isEmpty()){
+    static String SkipWord(String unprocess){
+        if(unprocess.isEmpty()){
             return "";
         }
-        if(upprocess.startsWith("apple")){
-            return SkipWord(upprocess.substring(5));
+        if(unprocess.startsWith("apple")){
+            return SkipWord(unprocess.substring(5));
 
         }else{
-            return upprocess.charAt(0) + SkipWord(upprocess.substring(1));
+            return unprocess.charAt(0) + SkipWord(unprocess.substring(1));
         }
     }
 
