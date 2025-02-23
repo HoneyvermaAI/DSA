@@ -1,6 +1,3 @@
-import java.io.PrintStream;
-import java.util.Stack;
-
 public class DiceCombinationQuestion {
     public static void main(String[] args) {
         Dice("",4);
