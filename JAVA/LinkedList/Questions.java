@@ -1,12 +1,12 @@
 package LinkedList;
 
-import java.lang.runtime.SwitchBootstraps;
+import java.util.LinkedList;
 
-public class SinglyLinkedlist {
+public class Questions {
     private node head;
     private node tail;
     private int size;
-    public SinglyLinkedlist(){
+    public Questions(){
         this.size = 0;
     }
     public void insertfirst(int val){
@@ -94,6 +94,20 @@ public class SinglyLinkedlist {
         size--;
         return val;
     }
+    public void duplicates(){
+        node Node = head;
+        while(Node.next != null){
+            if(Node.value == Node.next.value){
+                Node.next = Node.next.next;
+                size--;
+            }
+            else{
+                Node = Node.next;
+            }
+        }
+        tail = Node;
+        tail.next = null;
+    }
     public void display(){
         node temp = head;
         while (temp!=null){
@@ -116,3 +130,4 @@ public class SinglyLinkedlist {
 
     }
 }
+// Merge sort Questions
