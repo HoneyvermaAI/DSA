@@ -3,7 +3,7 @@ package JumpSearch;
 public class JumpSearchInArray {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,7,8,9,10,20,30,50,100,125,170,195};
-        int result = jumpSearch(arr,170);
+        int result = jumpSearch(arr,17);
         if (result == -1){
             System.out.println("Element is not found in the array");
 
